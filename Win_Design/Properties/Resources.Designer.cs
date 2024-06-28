@@ -63,6 +63,16 @@ namespace Win_Design.Properties {
         /// <summary>
         ///   查找 System.Drawing.Bitmap 类型的本地化资源。
         /// </summary>
+        internal static System.Drawing.Bitmap imageres_009 {
+            get {
+                object obj = ResourceManager.GetObject("imageres 009", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
         internal static System.Drawing.Bitmap imageres_010 {
             get {
                 object obj = ResourceManager.GetObject("imageres 010", resourceCulture);
@@ -93,6 +103,16 @@ namespace Win_Design.Properties {
         /// <summary>
         ///   查找 System.Drawing.Bitmap 类型的本地化资源。
         /// </summary>
+        internal static System.Drawing.Bitmap imageres_108 {
+            get {
+                object obj = ResourceManager.GetObject("imageres 108", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
         internal static System.Drawing.Bitmap imageres_125 {
             get {
                 object obj = ResourceManager.GetObject("imageres 125", resourceCulture);
@@ -103,9 +123,29 @@ namespace Win_Design.Properties {
         /// <summary>
         ///   查找 System.Drawing.Bitmap 类型的本地化资源。
         /// </summary>
+        internal static System.Drawing.Bitmap imageres_188 {
+            get {
+                object obj = ResourceManager.GetObject("imageres 188", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
         internal static System.Drawing.Bitmap imageres_291 {
             get {
                 object obj = ResourceManager.GetObject("imageres 291", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap Win32ForC_png {
+            get {
+                object obj = ResourceManager.GetObject("Win32ForC.png", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
