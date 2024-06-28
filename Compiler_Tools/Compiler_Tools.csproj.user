@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
+    <StartArguments>"D:\Desktop\新项目 Win32 API Window\Main.cpp" "D:\Desktop\新项目 Win32 API Window" Main.exe False</StartArguments>
+  </PropertyGroup>
+</Project>

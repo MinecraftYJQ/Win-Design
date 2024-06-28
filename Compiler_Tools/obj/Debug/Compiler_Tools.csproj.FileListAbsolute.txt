@@ -1,0 +1,11 @@
+D:\Desktop\Win_Design\Compiler_Tools\bin\Debug\Compiler_Tools.exe.config
+D:\Desktop\Win_Design\Compiler_Tools\bin\Debug\Compiler_Tools.exe
+D:\Desktop\Win_Design\Compiler_Tools\bin\Debug\Compiler_Tools.pdb
+D:\Desktop\Win_Design\Compiler_Tools\obj\Debug\Compiler_Tools.csproj.AssemblyReference.cache
+D:\Desktop\Win_Design\Compiler_Tools\obj\Debug\Compiler_Tools.csproj.SuggestedBindingRedirects.cache
+D:\Desktop\Win_Design\Compiler_Tools\obj\Debug\Compiler_Tools.Form1.resources
+D:\Desktop\Win_Design\Compiler_Tools\obj\Debug\Compiler_Tools.Properties.Resources.resources
+D:\Desktop\Win_Design\Compiler_Tools\obj\Debug\Compiler_Tools.csproj.GenerateResource.cache
+D:\Desktop\Win_Design\Compiler_Tools\obj\Debug\Compiler_Tools.csproj.CoreCompileInputs.cache
+D:\Desktop\Win_Design\Compiler_Tools\obj\Debug\Compiler_Tools.exe
+D:\Desktop\Win_Design\Compiler_Tools\obj\Debug\Compiler_Tools.pdb
