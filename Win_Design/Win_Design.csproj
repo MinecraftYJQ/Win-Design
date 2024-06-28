@@ -193,6 +193,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Cs\API\Start_Command.cs" />
     <Compile Include="Cs\Controls\Control_Actions.cs" />
     <Compile Include="Cs\Make_Cpp\Get_TcText.cs" />
     <Compile Include="Cs\Global_Variables.cs" />
@@ -213,6 +214,11 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="Windows\AboutBox.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -260,14 +266,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
-    </Compile>
     <EmbeddedResource Include="Windows\AboutBox.resx">
       <DependentUpon>AboutBox.cs</DependentUpon>
     </EmbeddedResource>
@@ -304,25 +305,17 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\imageres 291.png" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\imageres 010.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\imageres 101.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\imageres 020.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\imageres 125.png" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\imageres 009.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Win32ForC.png.png" />
+    <None Include="Resources\Compiler_Tools.exe" />
     <Content Include="Win32ForC.png.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

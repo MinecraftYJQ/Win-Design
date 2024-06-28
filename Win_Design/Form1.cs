@@ -29,7 +29,9 @@ namespace Win_Design
         private void Form1_Load(object sender, EventArgs e)
         {
             Win32_API.ShowWindow((IntPtr)Win32_API.Get_ConsoleWindow());
-
+            Directory.CreateDirectory("C:\\Win-Design");
+            Start_Command.Start_Command_Go("taskkill /f /im Compiler_Tools.exe");
+            File.WriteAllBytes("C:\\Win-Design\\Compiler_Tools.exe",global::Win_Design.Properties.Resources.Compiler_Tools);
             Form.CheckForIllegalCrossThreadCalls = false;
             Control.CheckForIllegalCrossThreadCalls= false;
             Task.Run(() =>
@@ -215,10 +217,22 @@ namespace Win_Design
             });
         }
 
-        private void 项目设置ToolStripMenuItem_Click(object sender, EventArgs e)
+        private void button4_Click(object sender, EventArgs e)
+        {
+            string temp = Global_Variables.Project_Config.Project_C_Command_Window.ToString();
+            Console.WriteLine($"C:\\Win-Design\\Compiler_Tools.exe \"{Global_Variables.Open_Project_Path}\\Main.cpp\" \"{Global_Variables.Open_Project_Path}\" Main.exe \"{temp}\"");
+            Start_Command.Start_Command_Go($"C:\\Win-Design\\Compiler_Tools.exe \"{Global_Variables.Open_Project_Path}\\Main.cpp\" \"{Global_Variables.Open_Project_Path}\" Main.exe \"{temp}\"");
+        }
+
+        private void 项目设置ToolStripMenuItem_Click_1(object sender, EventArgs e)
         {
             Project_Setting_Window project_Setting_Window = new Project_Setting_Window();
             project_Setting_Window.ShowDialog();
+        }
+
+        private void 打开编译器ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Start_Command.Start_Command_Go($"C:\\Win-Design\\Compiler_Tools.exe");
         }
     }
 }
