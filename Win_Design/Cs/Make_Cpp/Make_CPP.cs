@@ -19,15 +19,15 @@ namespace Win_Design.Cs
             string winsize = $"{w},{h}";
             winsize += ",NULL, NULL, hInstance, NULL);";
 
-            string cmd_window = null;
-            if (!Global_Variables.Project_Config.Project_C_Command_Window)
+            string cmd_window = "";
+            /*if (!Global_Variables.Project_Config.Project_C_Command_Window)
             {
                 cmd_window = "ShowWindow(hWnd, SW_HIDE);\r\n    ";
             }
             else
             {
                 cmd_window = "";
-            }
+            }*/
             string text1 = $"#include <windows.h>\r\n\r\nLRESULT CALLBACK WndProc(HWND hwnd, UINT msg, WPARAM wParam, LPARAM lParam)\r\n{{\r\n    switch (msg)\r\n    {{\r\n        case WM_DESTROY:";
             string text3= $"\r\n            PostQuitMessage(0);\r\n            break;\r\n        }}default:\r\n            return DefWindowProc(hwnd, msg, wParam, lParam);\r\n    }}\r\n    return 0;\r\n}}\r\n\r\nint WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine, int nCmdShow)\r\n{{\r\n    HWND hWnd = GetConsoleWindow();\r\n    {cmd_window}WNDCLASS wc = {{0}};\r\n    wc.lpfnWndProc = WndProc;\r\n    wc.hInstance = hInstance;\r\n    wc.lpszClassName = \"Win32ControlsWindow\";\r\n    RegisterClass(&wc);\r\n    HWND hwnd = CreateWindow(wc.lpszClassName, \"{Global_Variables.design_Main.Text}\", WS_OVERLAPPEDWINDOW, 100, 100, ";
             string text2 = $"\n    ShowWindow(hwnd, nCmdShow);\r\n\r\n    MSG msg = {{0}};\r\n    while (GetMessage(&msg, NULL, 0, 0))\r\n    {{\r\n        TranslateMessage(&msg);\r\n        DispatchMessage(&msg);\r\n    }}\r\n\r\n    return msg.wParam;\r\n}}";
@@ -89,7 +89,7 @@ namespace Win_Design.Cs
                             if (ids == id)
                             {
                                 string outs = $"                case {id}:{(string)id_ojb["sj"]}break;";
-                                sjcl =outs;
+                                sjcl +=outs;
                             }
                         }
 
